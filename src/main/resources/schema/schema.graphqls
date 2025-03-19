@@ -1,0 +1,23 @@
+type Query {
+    customers(page: Int): [Customer!] !
+    customer(id: ID!): Customer
+}
+
+type Mutation {
+    createCustomer(input: CreateCustomerInput!): CreateCustomerResponse!
+}
+
+type CreateCustomerResponse {
+    customer: Customer
+}
+
+input CreateCustomerInput {
+    firstName: String!
+    lastName: String!
+}
+
+type Customer {
+    id: ID!
+    firstName: String!
+    lastName: String!
+}
