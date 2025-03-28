@@ -1,6 +1,6 @@
 # graphql-customer
 
-http://localhost:8080/graphql
+http://localhost:8082/graphql
 
 ```
 query {
